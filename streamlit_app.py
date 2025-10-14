@@ -1,7 +1,7 @@
 # Import python packages
 import streamlit as st
 from snowflake.snowpark.functions import col
-
+import requests
 
 # Write directly to the app
 st.title(f":cup_with_straw: Customize Your Smoothie! :cup_with_straw:")
@@ -23,7 +23,7 @@ ingredients_list = st.multiselect ('Choose up to 5 ingredients:'
                                   , max_selections=5
 
                                 )
-import requests
+
 #what if ingredients_list is not null: then do everything below this line that is indented
 if ingredients_list:
     ingredients_string = ''
