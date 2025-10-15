@@ -29,6 +29,7 @@ ingredients_list = st.multiselect ('Choose up to 5 ingredients:'
                                   )
 #what if ingredients_list is not null: then do everything below this line that is indented
 if ingredients_list:
+  
     ingredients_string = ''
   
     for fruit_chosen in ingredients_list:
